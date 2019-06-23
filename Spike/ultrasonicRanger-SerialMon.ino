@@ -1,27 +1,3 @@
-// This #include statement was automatically added by the Particle IDE.
-#include <Grove_4Digit_Display.h>
-
-// This #include statement was automatically added by the Particle IDE.
-#include <Grove-Ultrasonic-Ranger.h>
-#include "Grove_4Digit_Display.h"
-#define CLK D2//pins definitions for TM1637 and can be changed to other ports
-#define DIO D3
-
-
-
-/***************************************************************************/
-//	Function: Measure the distance to obstacles in front and print the distance
-//			  value to the serial terminal.The measured distance is from
-//			  the range 0 to 400cm(157 inches).
-//	Hardware: Grove - Ultrasonic Ranger
-//	Arduino IDE: Arduino-1.0
-/*****************************************************************************/
-//int Ultrasonic = D5;
-
-Ultrasonic ultrasonic(D4);
-TM1637 disp(CLK,DIO);
-
-
 
 
 
@@ -53,7 +29,7 @@ void loop()
 	
 	if (RangeInCentimeters != lastRange) {
     lastRange = RangeInCentimeters;
-    Particle.publish("Success", " Obstacle noticed at" + lastRange, PRIVATE);
+    
 
     // Fill display with zeros
     for (int i = 0; i < 4; i++) {
@@ -71,6 +47,6 @@ void loop()
     pos--;
 }
 }
-
+Particle.publish("Success", " Obstacle noticed at" + String(RangeInCentimeters), PRIVATE);
 	
 }
