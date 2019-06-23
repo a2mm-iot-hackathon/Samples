@@ -1,4 +1,4 @@
-/ This #include statement was automatically added by the Particle IDE.
+// This #include statement was automatically added by the Particle IDE.
 #include <Grove_4Digit_Display.h>
 
 // This #include statement was automatically added by the Particle IDE.
