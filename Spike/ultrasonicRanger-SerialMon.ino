@@ -52,7 +52,7 @@ void loop()
 	RangeInCentimeters = ultrasonic.MeasureInCentimeters(); // two measurements should keep an interval
 	Serial.print(RangeInCentimeters);//0~400cm
 	Serial.println(" cm");
-	delay(500);
+	delay(5000);
 	
 	if (RangeInCentimeters != lastRange) {
     lastRange = RangeInCentimeters;
@@ -74,6 +74,6 @@ void loop()
     pos--;
 }
 }
-Particle.publish("Success", " Obstacle noticed at" + String(ultrasonic.MeasureInCentimeters()), PRIVATE);
+Particle.publish("Success", "Obstacle noticed at " + String(ultrasonic.MeasureInCentimeters()), PRIVATE);
 	
 }
