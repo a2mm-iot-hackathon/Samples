@@ -1,0 +1,19 @@
+ Ultrasonic ultrasonic(D2);
+ int lastRange = 0;
+
+ void setup() {
+ }
+
+    
+ void loop() {
+     int rangeC;
+
+     rangeC = ultrasonic.MeasureInCentimeters();
+     //Serial.print(rangeC); //0~400cm
+     //Serial.println(" cm");
+     
+      if (rangeC != lastRange & rangeC < 69) {
+     lastRange = rangeC;
+Particle.publish("Someone walked by!!", String(3), PRIVATE);
+     }
+ }
