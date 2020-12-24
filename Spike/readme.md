@@ -14,5 +14,5 @@ Pic of the product
 ![Architecture diagram](https://github.com/a2mm-iot-hackathon/iot-samples/blob/master/Spike/archdiag.jpg)
 
 ### Links to code
-####https://github.com/a2mm-iot-hackathon/iot-samples/blob/master/Spike/ultrasonic-display-term.ino
-####https://github.com/a2mm-iot-hackathon/iot-samples/blob/master/Spike/ultrasonicRanger-SerialMon.ino
+#### https://github.com/a2mm-iot-hackathon/iot-samples/blob/master/Spike/ultrasonic-display-term.ino
+#### https://github.com/a2mm-iot-hackathon/iot-samples/blob/master/Spike/ultrasonicRanger-SerialMon.ino
