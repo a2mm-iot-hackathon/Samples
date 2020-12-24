@@ -10,9 +10,9 @@ Pic of the product
 ![Pic SonicMon](https://github.com/a2mm-iot-hackathon/iot-samples/blob/master/Spike/Argon1.jpg)
 
 ### Architecture
-                                     --> Serial --> NeoPixel
-   Ultrasonic Sensor --> Particle Argon --> WiFi --> IFTTT --> Cell phone
-                                       --> Serail --> Digital Display
+
+![Architecture diagram](https://github.com/a2mm-iot-hackathon/iot-samples/blob/master/Spike/archdiag.jpg)
+
 ### Links to code
 https://github.com/a2mm-iot-hackathon/iot-samples/blob/master/Spike/ultrasonic-display-term.ino
 https://github.com/a2mm-iot-hackathon/iot-samples/blob/master/Spike/ultrasonicRanger-SerialMon.ino
