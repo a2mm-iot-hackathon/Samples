@@ -11,8 +11,8 @@ Pic of the product
 
 ### Architecture
                                      --> Serial --> NeoPixel
-Ultrasonic Sensor --> Particle Argon --> WiFi --> IFTTT --> Cell phone
-                                     --> Serail --> Digital Display
+   Ultrasonic Sensor --> Particle Argon --> WiFi --> IFTTT --> Cell phone
+                                       --> Serail --> Digital Display
 ### Links to code
 https://github.com/a2mm-iot-hackathon/iot-samples/blob/master/Spike/ultrasonic-display-term.ino
 https://github.com/a2mm-iot-hackathon/iot-samples/blob/master/Spike/ultrasonicRanger-SerialMon.ino
